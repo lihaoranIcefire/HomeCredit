@@ -54,3 +54,33 @@ All other features end with a capital letter
 
 ## Feature Engineering
 
+Implemented the `Aggregator` class, generating the following aggregated features
+- `max_group`: max of `num_groupN`
+- `dpd`: features ending with P
+    * max of DPD
+    * mean of DPD
+    * ratio of DPD>0
+    * max of the applicant (`num_group1`=0)
+- `amnt`: features ending with A
+    * max
+    * min
+    * mean
+    * std
+    * max of the applicant
+- `date`: features ending with D
+    * max
+    * min
+    * max of the applicant
+- `cat`: features ending with M
+    * mode of all categories (if not category then take mean)
+    * max of applicant
+- `other`: features ending with T or L
+    * mode
+    * max of applicant
+
+
+## Machine Learning
+
+
+
+## Model Evaluation
